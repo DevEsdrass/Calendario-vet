@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calendário Veterinário</title>
+</head>
+<body>
+    <button id="addEventButton">Adicionar Evento</button>
+    <div id="eventForm"style="display: none;">
+    <input type="text" id="eventTitle" placeholder="Título do Evento">
+<input type="datetime-local" id="eventStart" placeholder="Data e Hora de Início">
+<input type="datetime-local" id="eventEnd" placeholder="Data e Hora de Término">
+<button id="saveEventButton">Salvar Evento</button>
+</div> 
+    <div id="calendar">
+        <iframe src="https://calendar.google.com/calendar/embed?src=clinicavetclaracoelho%40gmail.com&ctz=America%2FFortaleza" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="calendar.js"></script>
+</body>
+</html>

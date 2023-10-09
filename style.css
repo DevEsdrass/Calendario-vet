@@ -1,0 +1,99 @@
+/* Reset de estilos padrão do navegador */
+html, body, div, h1, h2, h3, p, button, input, iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Arial', sans-serif; /* Usando uma fonte genérica caso a fonte personalizada não seja carregada */
+}
+
+body {
+    background-color: #fff; /* Fundo branco */
+    color: #000; /* Texto preto */
+    font-size: 16px;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Botão Adicionar Evento */
+#addEventButton {
+    background-color: #FFA500; /* Laranja */
+    color: #fff; /* Texto branco */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addEventButton:hover {
+    background-color: #FF8000; /* Laranja mais escura no hover */
+}
+
+/* Formulário de Adição de Evento */
+#eventForm {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#eventForm input[type="text"],
+#eventForm input[type="datetime-local"],
+#eventForm button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* Calendário iFrame */
+#calendar {
+    margin-top: 20px;
+}
+
+/* Cabeçalho do Calendário (Meses e Dias da Semana) */
+#calendar th {
+    background-color: #FFA500; /* Laranja */
+    color: #fff; /* Texto branco */
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Células de Data */
+#calendar td {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Eventos no Calendário */
+.calendar .event {
+    position: absolute;
+    background-color: #FFA500; /* Laranja */
+    color: #fff; /* Texto branco */
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+/* Link do Google Calendar no iFrame (opcional) */
+a.gcal-link {
+    color: #FFA500; /* Laranja */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.gcal-link:hover {
+    text-decoration: underline;
+}
